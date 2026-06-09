@@ -223,5 +223,19 @@ footer {
 
     .hero h1 {
         font-size: 2rem;
+
+#theme-toggle{
+    background:#00bfff;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#theme-toggle:hover{
+    background:#0099cc;
+}
     }
 }
