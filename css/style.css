@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Segoe UI', sans-serif;
 }
 
 /* Body */
@@ -35,7 +35,7 @@ nav a:hover{
     color:#00bfff;
 }
 
-/* Page Container */
+/* Container */
 .container{
     width:90%;
     max-width:1200px;
@@ -55,7 +55,7 @@ h2{
     margin-bottom:15px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero{
     text-align:center;
     padding:100px 20px;
@@ -100,12 +100,6 @@ h2{
     transform:translateY(-5px);
 }
 
-.card-container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
 /* Blog Posts */
 .blog-post{
     background:#1f1f1f;
@@ -143,9 +137,5 @@ footer{
 
     .hero h1{
         font-size:2rem;
-    }
-
-    .card-container{
-        flex-direction:column;
     }
 }
