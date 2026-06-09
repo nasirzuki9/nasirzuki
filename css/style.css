@@ -1,203 +1,187 @@
-body{
-    background:red !important;
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-/* Hero Section */
-.hero{
-    text-align:center;
-    padding:100px 20px;
-    max-width:900px;
-    margin:auto;
+/* =========================
+   BODY
+========================= */
+body {
+    background: #121212;
+    color: #e4e4e4;
+    line-height: 1.6;
 }
 
-/* Profile Picture */
-.profile-pic{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #00bfff;
-    box-shadow:0 0 30px rgba(0,191,255,0.5);
-    margin-bottom:25px;
+/* =========================
+   NAVIGATION
+========================= */
+nav {
+    background: #1e1e1e;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Name */
-.hero h1{
-    font-size:3rem;
-    color:#00bfff;
-    margin-bottom:10px;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* Subtitle */
-.subtitle{
-    font-size:1.3rem;
-    color:#bdbdbd;
-    margin-bottom:20px;
+nav a:hover {
+    color: #00bfff;
 }
 
-/* Description */
-.description{
-    max-width:700px;
-    margin:0 auto 30px;
-    color:#d4d4d4;
-    font-size:1.1rem;
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
 }
 
-/* Button */
-.btn{
-    display:inline-block;
-    background:#00bfff;
-    color:white;
-    text-decoration:none;
-    padding:12px 30px;
-    border-radius:8px;
-    transition:0.3s;
-    font-weight:bold;
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-.btn:hover{
-    background:#0099cc;
-    transform:translateY(-2px);
+.hero h1 {
+    font-size: 3rem;
+    color: #00bfff;
+    margin-bottom: 10px;
 }
 
-/* Reset */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI', sans-serif;
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 15px;
 }
 
-/* Body */
-body{
-    background:#121212;
-    color:#e4e4e4;
-    line-height:1.6;
+/* =========================
+   PROFILE IMAGE (CIRCLE)
+========================= */
+.profile-pic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00bfff;
+    box-shadow: 0 0 30px rgba(0, 191, 255, 0.5);
+    margin-bottom: 25px;
 }
 
-/* Navigation */
-nav{
-    background:#1e1e1e;
-    padding:20px;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    position:sticky;
-    top:0;
+/* =========================
+   TEXT
+========================= */
+.subtitle {
+    font-size: 1.3rem;
+    color: #bdbdbd;
+    margin-bottom: 20px;
 }
 
-nav a{
-    color:#ffffff;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
+.description {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #d4d4d4;
+    font-size: 1.1rem;
 }
 
-nav a:hover{
-    color:#00bfff;
+/* =========================
+   BUTTON
+========================= */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #00bfff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
 }
 
-/* Container */
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:50px 0;
+.btn:hover {
+    background: #0099cc;
+    transform: translateY(-2px);
 }
 
-/* Headings */
-h1{
-    text-align:center;
-    margin-bottom:20px;
-    color:#00bfff;
+/* =========================
+   CARDS
+========================= */
+.card {
+    background: #1f1f1f;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.15);
+    transition: 0.3s;
 }
 
-h2{
-    color:#00bfff;
-    margin-bottom:15px;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-/* Hero */
-.hero{
-    text-align:center;
-    padding:100px 20px;
+/* =========================
+   BLOG POSTS
+========================= */
+.blog-post {
+    background: #1f1f1f;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #00bfff;
+    border-radius: 8px;
 }
 
-.hero h1{
-    font-size:3rem;
+/* =========================
+   CONTACT BOX
+========================= */
+.contact-box {
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
 }
 
-.hero p{
-    font-size:1.2rem;
-    margin-top:15px;
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-/* Button */
-.btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#00bfff;
-    color:white;
-    text-decoration:none;
-    border-radius:5px;
-    transition:0.3s;
-}
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
 
-.btn:hover{
-    background:#0099cc;
-}
-
-/* Cards */
-.card{
-    background:#1f1f1f;
-    border-radius:10px;
-    padding:25px;
-    margin:15px;
-    box-shadow:0 0 15px rgba(0,191,255,0.15);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-}
-
-/* Blog Posts */
-.blog-post{
-    background:#1f1f1f;
-    padding:25px;
-    margin-bottom:20px;
-    border-left:5px solid #00bfff;
-    border-radius:8px;
-}
-
-/* Contact */
-.contact-box{
-    background:#1f1f1f;
-    padding:25px;
-    border-radius:10px;
-    max-width:600px;
-    margin:auto;
-}
-
-/* Footer */
-footer{
-    background:#1e1e1e;
-    text-align:center;
-    padding:20px;
-    margin-top:50px;
-}
-
-/* Responsive */
-@media(max-width:768px){
-
-    nav{
-        flex-direction:column;
-        text-align:center;
-        gap:15px;
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
     }
 
-    .hero h1{
-        font-size:2rem;
+    .hero h1 {
+        font-size: 2rem;
     }
 }
