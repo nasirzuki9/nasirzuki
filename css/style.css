@@ -1,241 +1,267 @@
 /* =========================
-   RESET
+RESET
 ========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
 }
 
 /* =========================
-   BODY
+BODY
 ========================= */
-body {
-    background: #121212;
-    color: #e4e4e4;
-    line-height: 1.6;
+
+body{
+background:#121212;
+color:#e4e4e4;
+line-height:1.6;
+transition:0.3s;
 }
 
 /* =========================
-   NAVIGATION
+NAVIGATION
 ========================= */
 
 nav{
-    background:#1e1e1e;
-    padding:20px;
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    position:sticky;
-    top:0;
-}
-nav a{
-    color:#ffffff;
-    text-decoration:none;
-    font-weight:bold;
-    padding:10px 15px;
-    border-radius:8px;
-    transition:0.3s;
+background:#1e1e1e;
+padding:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
-nav a:hover{
-    background:#00bfff;
-    color:white;
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+padding:10px 15px;
+border-radius:8px;
+transition:0.3s;
 }
+
+nav a:hover
 
 nav a.active{
-    background:#00bfff;
-    color:white;
+background:#00bfff;
 }
 
 /* =========================
-   CONTAINER
+THEME BUTTON
 ========================= */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 50px 0;
+
+#theme-toggle{
+background:#00bfff;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+transition:0.3s;
+}
+
+#theme-toggle:hover
+
+/* =========================
+CONTAINER
+========================= */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:50px 0;
 }
 
 /* =========================
-   HERO SECTION
+HERO
 ========================= */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    max-width: 900px;
-    margin: auto;
+
+.hero{
+text-align:center;
+padding:80px 20px;
+max-width:900px;
+margin:auto;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    color: #00bfff;
-    margin-bottom: 10px;
+.profile-pic{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #00bfff;
+box-shadow:0 0 30px rgba(0,191,255,0.5);
+margin-bottom:25px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-top: 15px;
+.hero h1{
+color:#00bfff;
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:1.3rem;
+color:#bdbdbd;
+margin-bottom:20px;
+}
+
+.description{
+max-width:700px;
+margin:auto;
+color:#d4d4d4;
+font-size:1.1rem;
 }
 
 /* =========================
-   PROFILE IMAGE (CIRCLE)
+BUTTON
 ========================= */
-.profile-pic {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #00bfff;
-    box-shadow: 0 0 30px rgba(0, 191, 255, 0.5);
-    margin-bottom: 25px;
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 30px;
+background:#00bfff;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#0099cc;
+transform:translateY(-3px);
 }
 
 /* =========================
-   TEXT
+HEADINGS
 ========================= */
-.subtitle {
-    font-size: 1.3rem;
-    color: #bdbdbd;
-    margin-bottom: 20px;
+
+h1{
+text-align:center;
+margin-bottom:20px;
+color:#00bfff;
 }
 
-.description {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    color: #d4d4d4;
-    font-size: 1.1rem;
+h2{
+color:#00bfff;
+margin-bottom:15px;
 }
 
 /* =========================
-   BUTTON
+CARDS
 ========================= */
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #00bfff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-    font-weight: bold;
+
+.card,
+.contact-box{
+background:#1f1f1f;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 15px rgba(0,191,255,0.15);
+transition:0.3s;
 }
 
-.btn:hover {
-    background: #0099cc;
-    transform: translateY(-2px);
+.card:hover{
+transform:translateY(-5px);
 }
 
 /* =========================
-   CARDS
+BLOG POSTS
 ========================= */
-.card {
-    background: #1f1f1f;
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    box-shadow: 0 0 15px rgba(0, 191, 255, 0.15);
-    transition: 0.3s;
+
+.blog-post{
+background:#1f1f1f;
+padding:25px;
+margin-bottom:20px;
+border-left:5px solid #00bfff;
+border-radius:8px;
+transition:0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+.blog-post:hover{
+transform:translateY(-5px);
+}
+
+.intro{
+text-align:center;
+max-width:700px;
+margin:0 auto 30px;
 }
 
 /* =========================
-   BLOG POSTS
+FOOTER
 ========================= */
-.blog-post {
-    background: #1f1f1f;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-left: 5px solid #00bfff;
-    border-radius: 8px;
+
+footer{
+background:#1e1e1e;
+text-align:center;
+padding:20px;
+margin-top:50px;
 }
 
 /* =========================
-   CONTACT BOX
+LIGHT MODE
 ========================= */
-.contact-box {
-    background: #1f1f1f;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: auto;
-}
 
-/* Light Mode */
 body.light-mode{
-    background:#f5f5f5;
-    color:#222;
+background:#f5f5f5;
+color:#222;
 }
 
 body.light-mode nav{
-    background:#ffffff;
+background:white;
 }
 
 body.light-mode nav a{
-    color:#222;
+color:#222;
 }
 
 body.light-mode .card,
 body.light-mode .blog-post,
 body.light-mode .contact-box{
-    background:#ffffff;
-    color:#222;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
+background:white;
+color:#222;
+box-shadow:0 0 15px rgba(0,0,0,0.1);
 }
 
 body.light-mode footer{
-    background:#ffffff;
-    color:#222;
+background:white;
+color:#222;
 }
 
-body.light-mode .description,
 body.light-mode .subtitle,
+body.light-mode .description,
 body.light-mode p{
-    color:#444;
+color:#444;
 }
 
 /* =========================
-   FOOTER
+MOBILE
 ========================= */
-footer {
-    background: #1e1e1e;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+
+@media(max-width:768px){
+
+```
+nav{
+    flex-direction:column;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-
-#theme-toggle{
-    background:#00bfff;
-    color:white;
-    border:none;
-    padding:10px 15px;
-    border-radius:8px;
-    cursor:pointer;
-    font-weight:bold;
+.hero h1{
+    font-size:2rem;
 }
 
-#theme-toggle:hover{
-    background:#0099cc;
+.profile-pic{
+    width:170px;
+    height:170px;
 }
-    }
+```
+
 }
