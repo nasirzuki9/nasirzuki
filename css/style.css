@@ -20,26 +20,23 @@ body {
 /* =========================
    NAVIGATION
 ========================= */
-nav {
-    background: #1e1e1e;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+nav a{
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:8px;
+    transition:0.3s;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+nav a:hover{
+    background:#00bfff;
+    color:white;
 }
 
-nav a:hover {
-    color: #00bfff;
+nav a.active{
+    background:#00bfff;
+    color:white;
 }
 
 /* =========================
