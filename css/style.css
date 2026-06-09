@@ -256,6 +256,95 @@ body.light-mode p{
 color:#444;
 }
 
+.hero{
+    background: linear-gradient(90deg,#0ea5e9,#2563eb);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.about-section{
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:30px;
+    padding:20px;
+}
+
+.profile-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.profile-card img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.content{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.badge{
+    background:#16a34a;
+    color:white;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.graduate{
+    background:#64748b;
+}
+
+.skill{
+    margin-bottom:20px;
+}
+
+.bar{
+    background:#ddd;
+    height:20px;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    color:white;
+    text-align:right;
+    padding-right:10px;
+    line-height:20px;
+}
+
+.html{
+    width:85%;
+    background:#16a34a;
+}
+
+.bootstrap{
+    width:80%;
+    background:#2563eb;
+}
+
+.js{
+    width:60%;
+    background:#f59e0b;
+}
+
+.git{
+    width:75%;
+    background:#334155;
+}
+
 /* =========================
 MOBILE
 ========================= */
