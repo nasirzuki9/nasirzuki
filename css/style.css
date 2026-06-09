@@ -1,3 +1,7 @@
+body{
+    background:red !important;
+}
+
 /* Hero Section */
 .hero{
     text-align:center;
